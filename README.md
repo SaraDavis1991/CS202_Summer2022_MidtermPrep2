@@ -41,9 +41,9 @@ sandwich.h
 ```
 **Functionality**: This file should contain the definition for the Sandwich class, which includes the following attributes:  
 ```
-	string sandwichType;
-	Meat meatType; 
-  bool lettuceWrap;
+string sandwichType;
+Meat meatType; 
+bool lettuceWrap;
 ```
 ```
 sandwich.cpp
@@ -97,23 +97,23 @@ Setter functions for each attribute.
 **Returned Output**: None  
 **Functionality**: this function should display meat name. Then it should use the peel attribute to determine if the fruit is peeled (no peel) or not peeled (peel), and display an appropriate message dependant on the state of the peel.  
 ```
-seed.h
+hamburger.h
 ```
-**Functionality**: This class should contain the definition for the seed class, which includes the following attributes:  
+**Functionality**: This class should contain the definition for the Hamburger class, which includes the following attributes:  
 
 ```
-int size
-string shape
+bool ketchup
+bool mayo
 ```
 
 
 ```
-seed.cpp
+hamburger.cpp
 ```
 **Functionality**: This file should contain the function definitions for the following functions: 
  *Constructors*  
 - default constructor  
-size should be 0, shape should be an empty string
+ketchup and mayo should be true
 - parameterized contructor  
 - copy constructor  
 
@@ -123,26 +123,15 @@ Getter functions for each attribute.
 *Setters*  
 Setter functions for each attribute.
 
-*printSeed()*  
+*printHamburger()*  
 **Input Parameters**: None   
 **Returned Output**: None  
-**Functionality**: this function should display the seed size and shape, each on their own line.  
+**Functionality**: if ketchup and/or mustard are used, print INCLUDE: MUSTARD, KETCHUP
 
 
 **Sample Output**:
 ```
-This fruit is a banana, and it is currently not peeled.
-It is yellow and has 12 seeds
-Each seed has the following attributes: 
-Seed size: 1
-Seed Shape: round
 
-
-This fruit is a banana, and it is currently peeled.
-It is yellow and has 12 seeds
-Each seed has the following attributes: 
-Seed size: 1
-Seed Shape: round
 ```
 
 ## Submission details --Note: submission of this is not mandatory, but a good way to check if you're understanding. Solution can be found on WebCampus.
