@@ -13,7 +13,7 @@ The goal of this project is to:
 
 2.    **Formatting**: Make sure that you follow the precise recommendations for the output content and formatting. For example, do not change the text from “Correct usage: ” to “correct”. 
 
-3.    **Comments**: Header comments are required on all files and recommended for the rest of the program. Points will be deducted on your final if no header comments are included.
+3.    **Comments**: Header comments are required in the driver file and recommended for the rest of the program. Points will be deducted on your final if no header comments are included.
 ## Program
 Your project should include the following files:
 ```
@@ -34,7 +34,7 @@ Write a program for making a hamburger!
 ```
 driver.cpp
 ```
-The driver has been provided to you. Please modify it so that it prints sandwich, meat, and hamburger information for the pre-set newHamburger. Then change the meat type on the hamburger to chicken, and print sandwich, meat, and hamburger information again.
+The driver has been provided to you. Please modify it so that it prints sandwich, meat, and hamburger information for the pre-set newHamburger. Then change the burger  meat type so that it is chicken and print sandwich, meat, and hamburger information again.
 
 ```
 sandwich.h
@@ -65,7 +65,8 @@ Setter functions for each attribute.
 *printSandwich()*     
 **Input Parameters**: None  
 **Returned Output**: None  
-**Functionality**: this function should display sandwich type and whether it is a lettuce wrap(see output example at the end, or run executable).  
+**Functionality**: 
+this function should display The <\sandwich type>\ (lettuce wrap). (see output example at the end, or run executable).  
 ```
 meat.h
 ```
@@ -95,7 +96,7 @@ Setter functions for each attribute.
 *printMeat()*  
 **Input Parameters**: None  
 **Returned Output**: None  
-**Functionality**: this function should display meat name. Then it should use the peel attribute to determine if the fruit is peeled (no peel) or not peeled (peel), and display an appropriate message dependant on the state of the peel.  
+**Functionality**: this function should display <\number of meats>\ <\type of meats>\ patties
 ```
 hamburger.h
 ```
@@ -113,7 +114,7 @@ hamburger.cpp
 **Functionality**: This file should contain the function definitions for the following functions: 
  *Constructors*  
 - default constructor  
-ketchup and mayo should be true
+ketchup and mayo should be true, meat type is Beef, meat name is Burger Patty, lettuce wrap is false, number of meats is 1, sandwich type is Hamburger
 - parameterized contructor  
 - copy constructor  
 
@@ -126,12 +127,20 @@ Setter functions for each attribute.
 *printHamburger()*  
 **Input Parameters**: None   
 **Returned Output**: None  
-**Functionality**: if ketchup and/or mustard are used, print INCLUDE: MUSTARD, KETCHUP
-
+**Functionality**: This function should display "is a Hamburger sandwich. It has: " and then output "Ketchup" (if present) and/or "Mayo" (if present), each on their own line.
 
 **Sample Output**:
 ```
+The Double Beef Burger is a Hamburger sandwich. It has: 
+Ketchup
+Mayo
+2 Beef patties
 
+
+The Double Beef Burger is a Hamburger sandwich. It has: 
+Ketchup
+Mayo
+2 Chicken patties
 ```
 
 ## Submission details --Note: submission of this is not mandatory, but a good way to check if you're understanding. Solution can be found on WebCampus.
@@ -147,4 +156,3 @@ git add .
 git commit -m “a descriptive message!”
 git push
 ```
-
